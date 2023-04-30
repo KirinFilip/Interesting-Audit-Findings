@@ -4,7 +4,6 @@ pragma solidity 0.8.19;
 import "forge-std/Test.sol";
 
 contract Test1 is Test {
-    // storage struct
     struct Ss {
         uint256 a;
         address b;

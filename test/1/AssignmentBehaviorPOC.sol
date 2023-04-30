@@ -13,7 +13,7 @@ contract Test2 is Test {
         mArray[0] = 0;
         mArray[1] = 1;
 
-        // assign memory to storage
+        // 1. assign memory to storage
         // copies the whole `mArray` to storage
         sArray = mArray;
 
@@ -56,7 +56,7 @@ contract Test2 is Test {
         // reset the change
         sArray[0] = 0;
 
-        // assign storage to local storage
+        // 2. assign storage to local storage
         // assigns a pointer, data location of `sArray2` is storage
         uint256[2] storage sArray2 = sArray;
 
