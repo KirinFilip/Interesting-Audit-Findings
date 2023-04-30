@@ -1,7 +1,6 @@
-# Spearbit Interesting Audit Finding
+# `CelerIMFacet` incorrectly sets `RelayerCelerIM` as receiver
 
-## `CelerIMFacet` incorrectly sets `RelayerCelerIM` as receiver
-
+- From: [Spearbit](https://spearbit.com/)
 - [Link to Finding](https://solodit.xyz/issues/15923)
 - [Finding POC](https://github.com/KirinFilip/Interesting-Audit-Findings/blob/main/test/1/FindingPOC.sol)
 
