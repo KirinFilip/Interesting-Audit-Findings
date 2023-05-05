@@ -4,9 +4,3 @@
 [submodule "lib/openzeppelin-contracts"]
 	path = lib/openzeppelin-contracts
 	url = https://github.com/OpenZeppelin/openzeppelin-contracts
-[submodule "lib/2023-03-wenwin"]
-	path = lib/2023-03-wenwin
-	url = https://github.com/code-423n4/2023-03-wenwin
-[submodule "lib/2023-02-kairos"]
-	path = lib/2023-02-kairos
-	url = https://github.com/sherlock-audit/2023-02-kairos
