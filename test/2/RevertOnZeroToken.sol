@@ -11,7 +11,8 @@ contract RevertOnZeroToken is ERC20 {
     }
 
     function transfer(address _to, uint256 _amount) public override returns (bool) {
-        require(_amount != 0, "Zero Value Transfer");
+        require(balanceOf(_to) + _amount > balanceOf(_to), "Zero Value Transfer");
+        // simplified: require(_amount != 0, "Zero Value Transfer");
         return super.transferFrom(msg.sender, _to, _amount);
     }
 }
