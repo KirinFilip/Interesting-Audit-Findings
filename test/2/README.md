@@ -14,7 +14,7 @@ From the [Code Snippet](https://github.com/sherlock-audit/2023-02-kairos/blob/ma
 
 Address ERC20 tokens which revert on 0 value transfers. Auctions which are run with such tokens should have a minimal price of 1 wei instead of 0
 
-## Revert On Zero Transfer Tokens
+## Revert On Zero Value Transfer Tokens
 
 Since there are a lot of ERC20 tokens that do not follow the [ERC20 standard](https://eips.ethereum.org/EIPS/eip-20) exactly we need to be careful when a protocol is interacting with different ERC20 tokens.
 There are certain ERC20 tokens that do not allow zero value transfers and revert. One such token is [LEND](https://etherscan.io/token/0x80fB784B7eD66730e8b1DBd9820aFD29931aab03). Looking at its code we can see that on L74 `transfer` and on L86 `transferFrom` has a `require(balances[_to] + _value > balances[_to]);` statement that reverts if we try to transfer zero `_value` of tokens
